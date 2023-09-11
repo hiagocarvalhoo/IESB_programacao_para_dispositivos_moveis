@@ -4,11 +4,11 @@ import { FlatList, StyleSheet, Text, View } from 'react-native'
 export default function Profile({ imgUri, genero, nome, telefone, email }) {
 
     const pessoa = {
-        imgUri: 'https://www.fakepersongenerator.com/Face/female/female20161024753601562.jpg',
-        genero: 'Feminino',
-        nome: 'Felicia J Ochoa',
-        email: 'aiyana1980@gmail.com',
-        telefone: '630-337-6439'
+        imgUri: 'https://www.fakepersongenerator.com/Face/male/male20141083560953155.jpg',
+        genero: 'Masculino',
+        nome: 'Robert A Schmidt',
+        email: 'zola_larki10@hotmail.com',
+        telefone: '216-244-9778'
     }
 
     const carros = ['BMW', 'Ferrari', 'Mercedes', 'Audi', 'Fiat']
@@ -18,7 +18,7 @@ export default function Profile({ imgUri, genero, nome, telefone, email }) {
         <View style={styles.container}>
 
 
-            {
+            { /* {
                 carros.map(carro => {
                     return (<Text >{carro}</Text>)
                 })
@@ -28,10 +28,10 @@ export default function Profile({ imgUri, genero, nome, telefone, email }) {
                 data={carros}
                 renderItem={({ item }) => <Text>{item}</Text>}
 
-            />
+        /> */ }
 
 
-            {/* <Image
+            <Image
                 source={{ uri: pessoa.imgUri }}
                 style={styles.img}
             />
@@ -55,7 +55,7 @@ export default function Profile({ imgUri, genero, nome, telefone, email }) {
             <View style={styles.labelContainer}>
                 <Text style={[styles.texto, styles.textoLabel]}>Email</Text>
                 <Text style={styles.texto}>{pessoa.email}</Text>
-            </View> */}
+            </View>
 
         </View>
     )
